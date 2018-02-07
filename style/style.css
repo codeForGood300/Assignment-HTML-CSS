@@ -1,0 +1,139 @@
+​​
+nav {
+	overflow: hidden;
+}
+
+
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* The hero image */
+.hero-image {
+    /* The image used */
+    background-image: url("../image/homepage-share.jpg");
+
+    /* Set a specific height */
+     
+    height:675px;   
+    width: 100%;
+  
+    /*Position and center the image to scale nicely on all screens */
+    background-position: center;
+    /*background-repeat: no-repeat;*/
+    background-size:cover;
+    margin:0;
+    position:relative;
+}
+
+/* Place text in the middle of the image */
+
+.column-layout{
+    max-width:1300px;
+    margin: 40px auto 0 auto;
+    font-family: 'IM Fell DW Pica';font-size: 18px;
+
+     
+
+}
+
+.column{
+	padding:20px;
+	flex: 1;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	flex-basis: 30%;
+}
+
+
+
+/* Clear floats after the columns */
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (min-width:900px) {
+    .column-layout,.wrapper,nav{
+        display: flex;
+    justify-content: space-between;
+
+    }
+  }
+   
+.two-col {
+	max-width: 900px;
+	margin: 0 auto;
+	display: flex;
+	font-family: 'IM Fell DW Pica';font-size: 18px;
+
+}
+
+  .first {
+  	padding: 20px;
+  	flex: 1;
+  }
+
+  .second {
+  	flex: 1;
+  	display: flex;
+  	flex-direction: column;
+  }
+
+  .second-a {
+  	flex: 1;
+  }
+
+  .second-b {
+  	flex:1;
+  }
+
+  .second-c {
+  	flex: 1;
+  }
+
+h2 {
+	font-family: 'IM Fell French Canon SC';font-size: 26px;
+}
+
+h3{
+    font-family: 'IM Fell French Canon SC';font-size: 20px;
+
+}
+
+.wrapper {
+background-color: grey;
+flex: 1;
+box-sizing: border-box;
+padding: 10px;
+font-family: 'IM Fell DW Pica';font-size: 18px;
+flex-basis: 30%;
+}
+
+.header
+  {
+    height:50px;
+    background-color: #333;
+  }
+.content
+  {
+    position:absolute;
+    top: 50px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    overflow-y:scroll; 
+    background-color: #FFDEAD;       
+  }
